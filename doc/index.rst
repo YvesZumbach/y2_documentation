@@ -10,6 +10,8 @@ Welcome to y2's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   installation
+   cluster_architecture
    cluster_messages
    communication_to_worker_messages
 

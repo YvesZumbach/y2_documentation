@@ -1,0 +1,32 @@
+
+% !TeX program = xelatex
+
+\documentclass{standalone}
+
+\usepackage{fontspec}
+\usepackage{tikz}
+\usetikzlibrary{shapes, positioning, matrix, positioning, calc}
+
+\newcommand{\bigIcon}{\fontsize{1cm}{1.2cm}}
+
+\setfontfamily{\FA}{Font Awesome 5 Free}
+\setfontfamily{\FASolid}{Font Awesome 5 Free Solid}
+
+\begin{document}
+    \begin{tikzpicture}[every node/.style={anchor=south, align=center}, inner sep=0mm]
+        \matrix (M1) [matrix of nodes, column sep=10mm, row sep=1mm, ampersand replacement=\&] {
+            \node [font=\bigIcon] (internet) {\FASolid\symbol{"F0C2}}; \&
+            \node [font=\bigIcon] (comm) {\FASolid\symbol{"F7C0}}; \&
+            \node [font=\bigIcon] (worker) {\FASolid\symbol{"F085}};
+            \\[2mm]
+            \node [anchor=north] (internettext) {Internet}; \&
+            \node [anchor=north] (commtext) {Communication Service}; \&
+            \node [anchor=north] (workertext) {Worker Service};
+            \\
+        };
+        
+        % Connections
+        \draw ($(internet.south east) + (2mm,4.5mm)$) -- ($(comm.south west) + (-2mm,4.5mm)$);
+        \draw[-] ($(comm.south east) + (2mm,4.5mm)$) -- ($(worker.south west) + (-2mm,4.5mm)$);
+    \end{tikzpicture}
+\end{document}
