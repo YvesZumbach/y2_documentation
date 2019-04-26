@@ -11,6 +11,7 @@ Welcome to y2's documentation!
    :caption: Contents:
 
    installation
+   y2_command
    running_a_y2_cluster
    cluster_architecture
    cluster_messages
