@@ -24,6 +24,8 @@ When the client receive a ``ClientRequest`` message, it saves the reference
 to the node and answers with a ``ClientRequest`` message. The node, when
 receiving the ``ClientAnswer`` message, will save the reference to the client.
 
+.. _node_index_message:
+
 ``NodeIndex``
 ^^^^^^^^^^^^^
 
