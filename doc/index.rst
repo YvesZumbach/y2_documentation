@@ -15,7 +15,7 @@ Welcome to y2's documentation!
    running_a_y2_cluster
    cluster_architecture
    cluster_messages
-   communication_to_worker_messages
+   communication_to_worker_communications
 
 
 Indices and tables
