@@ -57,7 +57,7 @@ The index encoding is further divided in three parts:
 
 The value of the delta itself is a cluster variable and is known in advance, therefor it is not sent.
 
-``RunTime``
+``Runtime``
 ^^^^^^^^^^^
 
 Contains the compression, training and decompression runtime of one epoch.
