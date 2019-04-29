@@ -27,5 +27,7 @@ Message Types
 Messages sent between the communication service and the worker service are enumerated hereafter.
 The integer value is the message type value.
 
-* ``NodeIndex``: ``0``
-* ``Delta``: ``1``
+* 0: ``NodeIndex``
+* 1: ``Delta``
+* 2: ``Runtime``
+* 3: ``Finished``
