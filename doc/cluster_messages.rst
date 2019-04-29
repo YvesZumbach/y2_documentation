@@ -56,3 +56,23 @@ The index encoding is further divided in three parts:
 3. The index of the weight/bias to modify in the given layer on the remaining 21 least significant bits (thus limiting the maximum number of weight to 2097152, which means that, in a densely connected layer, ou cannot have more than :math:`\lfloor\sqrt{2097152}\rfloor = 1448` neurons).
 
 The value of the delta itself is a cluster variable and is known in advance, therefor it is not sent.
+
+``RunTime``
+^^^^^^^^^^^
+
+Contains the compression, training and decompression runtime of one epoch.
+The message contains 4 bytes:
+
+1. The number of sample processed.
+2. The number of milliseconds spent for decompressing received messages.
+3. The number of milliseconds spent for training the NN.
+4. The number of milliseconds spent for compressing the deltas to send to the other NN.
+
+``Finished``
+^^^^^^^^^^^^
+
+This messages is sent from the nodes to the client to indicate that a node completed its training.
+It allows to measure if all nodes finish approximately at the same time or if some of them take way longer (which would indicate that we need dynamic training data allocation).
+
+The worker sends an empty ``Finished`` message to the communication service.
+The communication service adds the node id to the message and sends it to the client.
