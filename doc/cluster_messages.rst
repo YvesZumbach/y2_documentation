@@ -50,10 +50,8 @@ The least significant bit encode whether the delta is positive or negative.
 
 The index encoding is further divided in three parts:
 
-1. The index of the layer containing the weight to modify on the 9 most significant bits (thus limiting the maximum number of layers to 512).
-2. Whether we are changing a weight or a bias (it is useful because PyTorch encodes weights and biases in two different arrays).
-   1 means a weight, 0 means a bias.
-3. The index of the weight/bias to modify in the given layer on the remaining 21 least significant bits (thus limiting the maximum number of weight to 2097152, which means that, in a densely connected layer, ou cannot have more than :math:`\lfloor\sqrt{2097152}\rfloor = 1448` neurons).
+1. The index of the layer containing the weight or bias to modify on the 10 most significant bits (thus limiting the maximum number of layers to 1024).
+2. The index of the weight/bias to modify in the given layer on the remaining 21 least significant bits (thus limiting the maximum number of weight to 2097152, which means that, in a densely connected layer, ou cannot have more than :math:`\lfloor\sqrt{2097152}\rfloor = 1448` neurons).
 
 The value of the delta itself is a cluster variable and is known in advance, therefor it is not sent.
 
