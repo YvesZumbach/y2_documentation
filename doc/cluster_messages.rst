@@ -65,6 +65,7 @@ The message contains 4 integers:
 2. The number of milliseconds spent for decompressing received messages.
 3. The number of milliseconds spent for training the NN.
 4. The number of milliseconds spent for compressing the deltas to send to the other NN.
+5. The loss fo the epoch multiplied by 1000.
 
 ``Finished``
 ^^^^^^^^^^^^
