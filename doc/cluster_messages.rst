@@ -59,7 +59,7 @@ The value of the delta itself is a cluster variable and is known in advance, the
 ^^^^^^^^^^^
 
 Contains the compression, training and decompression runtime of one epoch.
-The message contains 4 bytes:
+The message contains 4 integers:
 
 1. The number of sample processed.
 2. The number of milliseconds spent for decompressing received messages.
@@ -73,4 +73,4 @@ This messages is sent from the nodes to the client to indicate that a node compl
 It allows to measure if all nodes finish approximately at the same time or if some of them take way longer (which would indicate that we need dynamic training data allocation).
 
 The worker sends an empty ``Finished`` message to the communication service.
-The communication service adds the node id to the message and sends it to the client.
+The communication service adds a timestamp to the message and sends it to the client.
