@@ -10,12 +10,12 @@ URI     : https://colorlib.com
  -->
 
 <head>
-    <title>y2 Cluster</title>
+    <title>y<sup>2</sup> Cluster</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Mobland - Mobile App Landing Page Template">
-    <meta name="keywords" content="HTML5, bootstrap, mobile, app, landing, ios, android, responsive">
+    <meta name="description" content="y2 cluster - Distributed densely connected neural network training at scale using cloud infrastructure">
+    <meta name="keywords" content="distributed, neural network, machine learning, training, cloud, at scale, delta">
 
     <!-- Font -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -25,6 +25,7 @@ URI     : https://colorlib.com
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Themify Icons -->
     <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Owl carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- Main css -->
@@ -40,11 +41,11 @@ URI     : https://colorlib.com
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar-dark navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html">y2 Cluster</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <a class="navbar-brand" href="index.html">y<sup>2</sup> Cluster</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
                         <div class="collapse navbar-collapse" id="navbar">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item"> <a class="nav-link active" href="#home">HOME</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="doc/_build/html/index.html">DOCUMENTATION</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="https://y2-documentation.readthedocs.io/en/latest/">DOCUMENTATION</a> </li>
                             </ul>
                         </div>
                     </nav>
@@ -56,21 +57,14 @@ URI     : https://colorlib.com
 
     <header class="bg-gradient" id="home">
         <div class="container mt-5">
-            <h1>y2 Cluster</h1>
+            <h1>y<sup>2</sup> Cluster</h1>
             <p class="tagline">Distributed neural network training at scale.</p>
         </div>
-        <div class="img-holder mt-3"><img src="images/iphonex.png" alt="phone" class="img-fluid"></div>
+        <div class="mt-3"><img src="images/y2_logo/y2_logo.png" alt="y2 logo" class="img-fluid" style="max-width: 400px;"></div>
+        <div class="pt-5"> </div>
     </header>
 
-    <div class="client-logos my-5">
-        <div class="container text-center">
-            <img src="images/client-logos.png" alt="client logos" class="img-fluid">
-        </div>
-    </div>
-
     <div class="section light-bg" id="features">
-
-
         <div class="container">
 
             <div class="section-title">
@@ -84,10 +78,11 @@ URI     : https://colorlib.com
                     <div class="card features">
                         <div class="card-body">
                             <div class="media">
-                                <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
+                                <span class="ti-3x mr-3"><i class="gradient-fill fas fa-bolt"></i></span>
                                 <div class="media-body">
-                                    <h4 class="card-title">Simple</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque </p>
+                                    <h4 class="card-title">Fast</h4>
+                                    <p class="card-text">Train densely connected neural network faster than never before on this planet.</p>
+                                    <p class="card-text">Train your speech recognition neural network at least 4x faster with just 5 nodes.</p>
                                 </div>
                             </div>
                         </div>
@@ -97,10 +92,16 @@ URI     : https://colorlib.com
                     <div class="card features">
                         <div class="card-body">
                             <div class="media">
-                                <span class="ti-settings gradient-fill ti-3x mr-3"></span>
+                                <span class="ti-3x mr-3"><i class="gradient-fill far fa-hand-peace"></i></span>
                                 <div class="media-body">
-                                    <h4 class="card-title">Customize</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque </p>
+                                    <h4 class="card-title">Easy to Use</h4>
+                                    <p class="card-text">
+                                        To start the whole cluster, you will only need to know the IP address of one node.
+                                        No other configuration is required!
+                                    </p>
+                                    <p class="card-text">
+                                        See the <a href="#communication">Getting Started</a> section.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -110,10 +111,16 @@ URI     : https://colorlib.com
                     <div class="card features">
                         <div class="card-body">
                             <div class="media">
-                                <span class="ti-lock gradient-fill ti-3x mr-3"></span>
+                                <span class="ti-3x mr-3"><i class="gradient-fill fas fa-chart-line"></i></span>
                                 <div class="media-body">
-                                    <h4 class="card-title">Secure</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque </p>
+                                    <h4 class="card-title">Scalable</h4>
+                                    <p class="card-text">
+                                        Achieve speedups close to <span style="font-weight: 500;">linear</span> in the number of nodes in the cluster !
+                                        Even with tens of nodes.
+                                    </p>
+                                    <p class="card-text">
+                                        See the <a href="#schedule">Statistics</a> section.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -132,14 +139,15 @@ URI     : https://colorlib.com
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-6">
-                    <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
-                    <h2>Discover our App</h2>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati vel exercitationem eveniet vero maxime ratione </p>
-                    <a href="#" class="btn btn-primary">Read more</a>
+                    <h2>Discover our Documentation</h2>
+                    <p class="mb-4">
+                        The project is extensively documented to enable you to improve the cluster by adding new fuctionalities easily.
+                    </p>
+                    <a href="https://y2-documentation.readthedocs.io/en/latest/" class="btn btn-primary">To the Documentation</a>
                 </div>
             </div>
             <div class="perspective-phone">
-                <img src="images/perspective.png" alt="perspective phone" class="img-fluid">
+                <img src="images/y2_documentation.png" alt="perspective phone" class="img-fluid">
             </div>
         </div>
 
@@ -150,22 +158,19 @@ URI     : https://colorlib.com
     <div class="section light-bg">
         <div class="container">
             <div class="section-title">
-                <small>FEATURES</small>
-                <h3>Do more with our app</h3>
+                <small>Information</small>
+                <h3>About y<sup>2</sup></h3>
             </div>
 
             <ul class="nav nav-tabs nav-justified" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#communication">Communication</a>
+                    <a class="nav-link active" data-toggle="tab" href="#communication">Getting Started</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#schedule">Scheduling</a>
+                    <a class="nav-link" data-toggle="tab" href="#schedule">Statistics</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#messages">Messages</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#livechat">Live Chat</a>
+                    <a class="nav-link" data-toggle="tab" href="#messages">How it Works</a>
                 </li>
             </ul>
             <div class="tab-content">
@@ -173,14 +178,22 @@ URI     : https://colorlib.com
                     <div class="d-flex flex-column flex-lg-row">
                         <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
                         <div>
-
-                            <h2>Communicate with ease</h2>
-                            <p class="lead">Uniquely underwhelm premium outsourcing with proactive leadership skills. </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. Ut placerat dui eu nulla
-                                congue tincidunt ac a nibh. Mauris accumsan pulvinar lorem placerat volutpat. Praesent quis facilisis elit. Sed condimentum neque quis ex porttitor,
+                            <h2>Getting Started</h2>
+                            <p class="lead">How to start the y<sup>2</sup> cluster.</p>
+                            <p>
+                                On every node that you plan to use as nodes, pull the communication service and the worker service from GitHub (see the <a href="#download">Download</a> section).
                             </p>
-                            <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros. Vestibulum blandit vulputate pharetra. Phasellus lobortis leo a nisl euismod, eu faucibus justo sollicitudin. Mauris consectetur, tortor
-                                sed tempor malesuada, sem nunc porta augue, in dictum arcu tortor id turpis. Proin aliquet vulputate aliquam.
+                            <p>
+                                Start the communication service first using <code>sbt run "y2 node --seed-ip ip</code> (where you replace <code>ip</code> with the IP address of one of the node in the cluster).
+                            </p>
+                            <p>
+                                Then start the worker service on all nodes using <code>python3 main.py</code>.
+                            </p>
+                            <p>
+                                Finally, start the client service using <code>sbt run "y2 client --seed-ip ip --node-count n"</code> (replace <code>ip</code> with the IP address of one of the node in the cluster and <code>n</code> with the total number of nodes in the cluster).
+                            </p>
+                            <p>
+                                That's it, the cluster has started and is training your neural network!
                             </p>
                         </div>
                     </div>
@@ -188,13 +201,12 @@ URI     : https://colorlib.com
                 <div class="tab-pane fade" id="schedule">
                     <div class="d-flex flex-column flex-lg-row">
                         <div>
-                            <h2>Scheduling when you want</h2>
-                            <p class="lead">Uniquely underwhelm premium outsourcing with proactive leadership skills. </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. Ut placerat dui eu nulla
-                                congue tincidunt ac a nibh. Mauris accumsan pulvinar lorem placerat volutpat. Praesent quis facilisis elit. Sed condimentum neque quis ex porttitor,
+                            <h2>Statistics</h2>
+                            <p class="lead">
+                                Some results obtained with the y<sup>2</sup> cluster.
                             </p>
-                            <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros. Vestibulum blandit vulputate pharetra. Phasellus lobortis leo a nisl euismod, eu faucibus justo sollicitudin. Mauris consectetur, tortor
-                                sed tempor malesuada, sem nunc porta augue, in dictum arcu tortor id turpis. Proin aliquet vulputate aliquam.
+                            <p>
+                                TODO: Complete this section
                             </p>
                         </div>
                         <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
@@ -204,30 +216,30 @@ URI     : https://colorlib.com
                     <div class="d-flex flex-column flex-lg-row">
                         <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
                         <div>
-                            <h2>Realtime Messaging service</h2>
-                            <p class="lead">Uniquely underwhelm premium outsourcing with proactive leadership skills. </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. Ut placerat dui eu nulla
-                                congue tincidunt ac a nibh. Mauris accumsan pulvinar lorem placerat volutpat. Praesent quis facilisis elit. Sed condimentum neque quis ex porttitor,
+                            <h2>How it Works</h2>
+                            <p class="lead">
+                                The theory behind the magic.
                             </p>
-                            <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros. Vestibulum blandit vulputate pharetra. Phasellus lobortis leo a nisl euismod, eu faucibus justo sollicitudin. Mauris consectetur, tortor
-                                sed tempor malesuada, sem nunc porta augue, in dictum arcu tortor id turpis. Proin aliquet vulputate aliquam.
+                            <p>
+                                The main problem when parallelizing the training of densely connected neural networks is that communicating the full gradient after each epoch is a huge communication bottleneck (especially when the number of node increases).
                             </p>
+                            <p>
+                                To solve this issue, the y<sup>2</sup> nodes only send a predefined delta value to apply to a given weight.
+                                This delta value is known by all nodes in the cluster.
+                                The only information that actually needs to be transmitted is whether the delta is positive or negative and the weight to apply the delta to.
+                                This can reasonably be done using 4 bytes of data, thus rastically reducing the amount of communication.
+                            </p>
+                            <p>
+                                Experiments have proven that such compression does not prevent the neural network from converging.
+                            </p>
+                            <p>
+                                Our implementation is based on a paper by Amazon.
+                            </p>
+                            <a href="https://s3-us-west-2.amazonaws.com/amazon.jobs-public-documents/strom_interspeech2015.pdf" class="btn btn-primary">
+                                Download the paper
+                            </a>
+                            
                         </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="livechat">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div>
-                            <h2>Live chat when you needed</h2>
-                            <p class="lead">Uniquely underwhelm premium outsourcing with proactive leadership skills. </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. Ut placerat dui eu nulla
-                                congue tincidunt ac a nibh. Mauris accumsan pulvinar lorem placerat volutpat. Praesent quis facilisis elit. Sed condimentum neque quis ex porttitor,
-                            </p>
-                            <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros. Vestibulum blandit vulputate pharetra. Phasellus lobortis leo a nisl euismod, eu faucibus justo sollicitudin. Mauris consectetur, tortor
-                                sed tempor malesuada, sem nunc porta augue, in dictum arcu tortor id turpis. Proin aliquet vulputate aliquam.
-                            </p>
-                        </div>
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
                     </div>
                 </div>
             </div>
@@ -238,49 +250,54 @@ URI     : https://colorlib.com
     <!-- // end .section -->
 
 
-    <div class="section pt-0">
+    <div class="section">
+        <div class="container">
+            <div class="client-logos my-5">
+                <div class="section-title">
+                    <small>SPONSORS</small>
+                    <h3>The People Behind Us</h3>
+                </div>
+                <div class="container text-center">
+                    <img src="images/cmu.png" alt="client logos" class="img-fluid" style="max-height: 200px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // end .section -->
+    
+    <div class="section light-bg">
         <div class="container">
             <div class="section-title">
-                <small>FAQ</small>
-                <h3>Frequently Asked Questions</h3>
+                <small>Document</small>
+                <h3>Final Report</h3>
             </div>
-
-            <div class="row pt-4">
-                <div class="col-md-6">
-                    <h4 class="mb-3">Can I try before I buy?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
-                    <h4 class="mb-3">What payment methods do you accept?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
-
-                </div>
-                <div class="col-md-6">
-                    <h4 class="mb-3">Can I change my plan later?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
-                    <h4 class="mb-3">Do you have a contract?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
-
-                </div>
+            <div class="container text-center">
+                <p>
+                    The final report contains more detailed numbers and stats about the cluster.
+                </p>
+                <a href="https://y2-documentation.readthedocs.io/en/latest/" class="btn btn-primary">Download the Final Report</a>
             </div>
         </div>
-
     </div>
-    <!-- // end .section -->
 
 
 
-    <div class="section bg-gradient">
+    <div class="section bg-gradient" id="download">
         <div class="container">
             <div class="call-to-action">
-
-                <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
-                <h2>Download Anywhere</h2>
-                <p class="tagline">Available for all major mobile and desktop platforms. Rapidiously visualize optimal ROI rather than enterprise-wide methods of empowerment. </p>
-                <div class="my-4">
-
-                    <a href="#" class="btn btn-light"><img src="images/appleicon.png" alt="icon"> App Store</a>
-                    <a href="#" class="btn btn-light"><img src="images/playicon.png" alt="icon"> Google play</a>
+                <h2>Download the y<sup>2</sup> Cluster</h2>
+                <p class="tagline">Available for all operating systems.</p>
+                <div class="row my-4">
+                    <div class="col md-6 sm-12" style="text-align: right;">
+                        <a href="https://github.com/YvesZumbachCMU/y2_communication_service" class="btn btn-light">
+                            <i class="fab fa-github"></i> y<sup>2</sup> Client and Communication Service
+                        </a>
+                    </div>
+                    <div class="col md-6 sm-12" style="text-align: left;">
+                        <a href="https://github.com/YvesZumbachCMU/y2_compute_service" class="btn btn-light"><i class="fab fa-github"></i> y<sup>2</sup> Worker Service</a>
+                        <p class="text-primary"><small><i>Works with Python 3.6 and above. </i></small></p>
+                    </div>
                 </div>
-                <p class="text-primary"><small><i>*Works on iOS 10.0.5+, Android Kitkat and above. </i></small></p>
             </div>
         </div>
 
@@ -290,26 +307,21 @@ URI     : https://colorlib.com
     <div class="light-bg py-5" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 text-center text-lg-left">
-                    <p class="mb-2"> <span class="ti-location-pin mr-2"></span> 1485 Pacific St, Brooklyn, NY 11216 USA</p>
+                <div class="offset-lg-2 col-lg-4 text-center text-lg-left">
+                    <p class="mb-2"> <span class="ti-location-pin mr-2"></span> 5000 Forbes Ave, Pittsburgh, PA 15213</p>
                     <div class=" d-block d-sm-inline-block">
                         <p class="mb-2">
                             <span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:support@mobileapp.com">support@mobileapp.com</a>
                         </p>
                     </div>
-                    <div class="d-block d-sm-inline-block">
-                        <p class="mb-0">
-                            <span class="ti-headphone-alt mr-2"></span> <a href="tel:51836362800">518-3636-2800</a>
-                        </p>
-                    </div>
-
                 </div>
-                <div class="col-lg-6">
-                    <div class="social-icons">
-                        <a href="#"><span class="ti-facebook"></span></a>
-                        <a href="#"><span class="ti-twitter-alt"></span></a>
-                        <a href="#"><span class="ti-instagram"></span></a>
-                    </div>
+                <div class="col-lg-4">
+                    <p class="mb-2">
+                        <i class="fas fa-user"></i> Yannick Bloem
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-user"></i> Yves Zumbach
+                    </p>
                 </div>
             </div>
 
