@@ -1,6 +1,7 @@
 # y2 Documentation
 
-The documentation for the y2 cluster.
+The documentation for the y2 cluster is hosted in this repository.
+If you want to read the documentation, have a look at [https://yveszumbachcmu.github.io/y2_documentation/](https://yveszumbachcmu.github.io/y2_documentation/).
 
 ## Setup
 
